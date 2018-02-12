@@ -44,4 +44,4 @@ df5=df5.fillna(0)# use 0 fill in missing data
 df5['score']=df5['author_counts']*0.8+df5['paper_counts']*0.2  #given weight to author_counts and paper_counts, then rank data
 print(df5.sort_values('score')[::-1]) #greatest to samllest
 df5.to_csv('score.csv',index=False)
-#outpot score in csv by excel
+#output score in csv by excel
